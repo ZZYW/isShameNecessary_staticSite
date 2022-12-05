@@ -1,0 +1,65 @@
+---
+permalink: /totempole
+---
+
+<head>
+    {% include header.html %}
+    <link rel="stylesheet" href="/static/js/libs/magnific-popup.css"> 
+    <script src="/static/js/libs/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+
+                fixedContentPos: false
+            });
+
+            $('.popup-general').magnificPopup({
+            });
+
+        });
+    </script>
+</head>
+
+<body id="totempole-body">
+    {% include backtohome.html %}
+    <h6 class="page-title">shame totem pole</h6>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6">
+                <a href="#pdf-content" class="popup-general">
+                    <img src="/static/img/totem_pole/scapegoat_cover.png"/ id="img-bookcover">
+                    <h3>ABOUT</h3>
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6" id="totempole-link">
+                <a href="#video-content" class="popup-general">
+                    <img src="/static/img/totem_pole/Fig3.jpg"/ id="img-totem">
+                    <h3>SHAME TOTEM v2.0<br>MUSIC BY BRIAN ENO</h3>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="pdf-content" class="mfp-hide">
+        <iframe src="https://docs.google.com/file/d/0B_sCY2Q4ldgdb2VlN2hZU0RqT3c/preview" frameborder="0"></iframe>
+    </div>
+
+    <div id="video-content" class="mfp-hide">
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/34240891' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
+        <p>Throughout the 19th century, native tribes that spanned the north coast of North America erected shame totem poles to signal to the community that certain individuals or groups had transgressed. This art inspired this modernized, garish, digitally rendered 3-D shame pole created in 2011 to represent the most shameful corporations – chosen by 500 people based in the U.S. who surveyed about the corporations that have most negatively affected society. Using the logos of the companies with the greatest numbers of votes, I worked with 3D animator <a href="http://ogbog.net/" target="_blank">Oscar Baechler</a> to create the Shame Totem v.2.0. I also collaborated with artist Brian Eno, whose soundtrack for the shame totem combined slowed down indigenous hymns, financial data from public radio, and his own creations.</p>
+    </div>
+
+
+    {% include footer.html %}
+</body>

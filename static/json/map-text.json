@@ -1,0 +1,40 @@
+{
+    "mapTitle": "Who, how, and why do humans punish? This interactive map gives an overview of human punishment.",
+
+    "transgression": "A transgression involves defiance of a norm. There are norms that are biological and norms that are behavioral. There are moral norms, social norms, legal norms, cultural norms, religious norms, and norms of convention. Eating spaghetti with your hands transgresses a norm of convention, but it’s not immoral.<br><br>Some norms have long histories. Anthropologists who study hunter-gatherer societies that matched closest to our possible ancestors from the Pleistocene era found norms against murder, stealing, selfishness, and bullying.",
+
+
+    "punishments": "Punishments can be considered in terms of deprivations. Studies show that humans actually derive satisfaction from the punishment of norm violators, and experiments with humans have shown that, similar to cash prizes, punishing others activated reward-related regions of the brain.",
+
+
+    "carriedOutBy": [
+        "Punishment can be inflicted by the person or group against whom the transgressor transgressed, or by a third party, or even by oneself. ",
+
+        "Guilt acts as a form of self-punishment. People familiar with guilt know how consuming it can be. Yet, guilt is believed, by and large, to be an emotional construct of the West. Guilt also seems more prevalent today than it was in the past. The word for guilt does not appear in the Hebrew Old Testament. Shakespeare used the word guilt only 33 times, while he used shame 344 times.",
+
+        "Second-party punishment occurs when the individual or group negatively affected by the transgression punishes the transgressor.",
+
+        "When an individual or group unaffected by the transgression punishes on the victim’s behalf. The state also represents a third party, and state punishment is sometimes also referred to as 'common pool' punishment. No primate species aside from humans has yet shown evidence of third-party punishment."
+    ],
+
+    "deprivations": [
+        "Human punishment involves depriving the transgressor of life, liberty, bodily safety, resources, or reputation (or some combination), and reputation is the asset that shaming seeks to deny.",
+
+        "Deprivation of bodily safety – also known as corporal punishment.",
+
+        "Deprivation of life – also known as capital punishment.",
+
+        "Deprivation of liberty via prison is a relatively new form of punishment. French philosopher Michel Foucault discusses the rise of prisons in his 1975 book <em>Discipline and Punish: The Birth of the Prison.</em>",
+
+        "Deprivations of resources include things like food, time, money, access to the group, and even long hair. Charles Darwin wrote about tribes in South America for whom long hair was “so much valued as a beauty, that cutting it off was the severest punishment.” Most experiments on punishment in humans have only examined this form of punishment, allowing participants to pay money to deprive another participant of funds.",
+
+        "The deprivation of reputation can occur through acts of shaming, which threatens or actually exposes a transgressor to an audience."
+
+    ],
+
+    "proportional": "Is the punishment proportional to the transgression?",
+    "activePassive": "<h3>Active:</h3> Deprivations can be active, in the sense that something is taken away from the transgressor, which is the case in capital punishment, prison, torture, fines, and pickets.<br><h3>Passive:</h3> Or deprivations can be passive, such as when something is denied, which is the case with ostracism or the silent treatment. In a survey of of two thousand Americans, two-thirds admitted to using the silent treatment on someone close to them, while three-quarters said they had been the victim of the silent treatment.",
+
+    "price": "Generally, punishment carries a cost to the punisher, like the energy needed to perform the punishment, as well as some risk of retaliation.<br><h3>Cheap:</h3><br>Sometime in our distant past, we realized that mere exposure to public opprobrium could be used where physical, often violent elimination from the group had previously been required. The emergence of shaming as a social option would have reduced the cost of punishment, because mere exposure that served to damage an individual’s reputation in front of the group could have negative consequences—for instance, members of the group might choose not to cooperate with the shamed individual in the future. <br><h3>Expensive:</h3><br>Punishments that are more dangerous or riskier or expensive are considered costlier. Recent debates have asked whether drone strikes are worth the moral and financial cost."
+
+}

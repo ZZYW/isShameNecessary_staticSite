@@ -1,0 +1,14 @@
+<script>
+    $(document).ready(function () {
+        $('#backtohome #bg-container').mouseenter(function () {
+            $('#backtohome #link').fadeIn(500);
+        });
+        $('#backtohome #bg-container').mouseleave(function () {
+            $('#backtohome #link').fadeOut(500);
+        });
+    });
+</script>
+
+<div id="backtohome">
+    <a href="/" id="bg-container"><div id="link">HOME</div></a>
+</div>

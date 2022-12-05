@@ -1,0 +1,129 @@
+---
+permalink: /
+---
+
+<head>
+    {% include header.html %}
+    <!-- p5 js related -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.3.16/p5.min.js"></script>
+    <script src="/static/js/libs/p5.dom.js"></script>
+    <!-- webgl related libraries -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js"></script>
+    <script src="/static/js/libs/stats.min.js"></script>
+    <script type="text/javascript" src="/static/js/homepage/TrackballControls.js"></script>
+    <script type="text/javascript" src="/static/js/Mirror.js"></script>
+    <script src="/static/js/homepage/homepage.js"></script>
+    <!-- font -->
+    <script src="/static/fonts/helvetiker_regular.typeface.js"></script>
+    <script src="/static/fonts/helvetiker_bold.typeface.js"></script>
+    <script type="text/javascript" src="/static/js/homepage/alternative_navigation.js"></script>
+</head>
+
+<body id="homepage-body">
+
+    <h6 class="page-title">is shame necessary</h6>
+
+    <!-- landing page -->
+    <div id='landing-page'>
+        <script type="text/javascript" src="/static/js/homepage/hand_foot.js"></script>
+        <script src="/static/js/homepage/landingPageAnimation.js"></script>
+
+        <div id="suggestions">
+<!--             <div id="browser-suggestion">
+                <p>Your browser or your graphics card doesn't seem to support WebGL. We <strong>recommond</strong> you to upgrade your browser for full experience. Find out how to get it <a href="https://get.webgl.org" target="_blank">HERE</a>.</p>
+            </div> -->
+
+            <div id="device-suggestion" class="hidden-lg hidden-md">
+                <p>We recommend you to view the site on a desktop computer for a full experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- actual homepage -->
+
+<!--     <div id="navigation">
+        <script type="text/javascript" src="/static/js/homepage/navigation.js"></script>
+        <div id="captions">
+            <div id="txtbox-face" class="txtbox">
+                <h4 class="caption-title">Human Facial Expression<br></h4>
+            </div>
+
+            <div id="txtbox-map" class="txtbox">
+                <h4 class="caption-title">Map of Human Punishment</h4>
+            </div>
+
+            <div id="txtbox-totem" class="txtbox">
+                <h4 class="caption-title">Shame Totem Pole<br><h6>In-Progress</h6></h4>
+            </div>
+
+            <div id="txtbox-gallery" class="txtbox">
+                <h4 class="caption-title">Shame Gallery<br></h4>
+            </div>
+
+            <div id="txtbox-book" class="txtbox">
+                <h4 class="caption-title">About the Book</h4>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="alternative-navigation" class="container-fluid">
+        <!-- <div id="background"></div> -->
+        <div id="icons">
+
+            <div class="row" id="back-row">
+                <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 icon-section">
+                    <h3 class="caption-title">Shame Totem Pole</h3>
+                    <div id="totem" class="icon-container text-center">
+                        <a href="/totempole">
+                            <img class="img-responsive" src="/static/img/homepage/al-navigation/new/black-circle-totem.jpg">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 icon-section">
+                    <h3 class="caption-title">Shame Gallery</h3>
+                    <div id="gallery" class="icon-container text-center">
+                        <a href="/shamegallery">
+                            <img class="img-responsive" src="/static/img/homepage/al-navigation/new/black-circle-frames.jpg">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 icon-section">
+                    <h3 class="caption-title">Map of Human Punishment</h3>
+
+                    <div id="map" class="icon-container text-center">
+                        <a href="/map">
+                            <img class="img-responsive" src="/static/img/homepage/al-navigation/new/black-circle-map.jpg"> </a>
+                    </div>
+
+                </div>
+                <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 icon-section">
+                    <h3 class="caption-title">About the Book</h3>
+
+                    <div id="book" class="icon-container text-center">
+                        <a href="/book">
+                            <img class="img-responsive" src="/static/img/homepage/al-navigation/new/black-circle-book.jpg"> </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--icon row ends here-->
+        </div>
+        <!--container ends here-->
+
+        <div style="display:none">
+            <img src="/static/img/homepage/al-navigation/new/black-circle-head-green.jpg">
+            <img src="/static/img/homepage/al-navigation/new/black-circle-book-green.jpg">
+            <img src="/static/img/homepage/al-navigation/new/black-circle-totem-green.jpg">
+            <img src="/static/img/homepage/al-navigation/new/black-circle-map-green.jpg">
+            <img src="/static/img/homepage/al-navigation/new/black-circle-frames-green.jpg">
+        </div>
+
+    </div>
+    <!--alternative-navigation ends here-->
+    {% include footer.html %}
+</body>

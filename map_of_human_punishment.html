@@ -1,0 +1,255 @@
+---
+permalink: /map
+---
+
+<html>
+
+<head profile="http://www.w3.org/2005/10/profile">
+    {% include header.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.3.16/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.3.16/addons/p5.dom.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+    <script src="/static/js/map/punishment_map.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+
+</head>
+
+<!-- ||||||||||||||||||  LARGE SCREEN ( FULL EXPERIENCE ) ||||||||||||||||||  -->
+
+<body id="the-map">
+
+    {% include backtohome.html %}
+    <h6 class="page-title">Map of Human Punishment</h6>
+    <div class="container-fluid">
+
+        <div id="mohp3" class="hidden-sm hidden-xs">
+            <div>
+                <div id="veneer-div"></div>
+            </div>
+
+            <div id="tagline-container"></div>
+
+            <div id="text-container">
+                <span id="caption"></span>
+                <img id="black-cross" src="/static/img/black-cross.png">
+            </div>
+
+
+            <div id="text-container-sub"><span id="caption-sub"></span>
+            </div>
+
+            <div id="mohp-container" class="container">
+                <div class="row">
+                    <div class="col-xs-4 map-container" id="map_of_container">
+                        <!-- <img class="img-responsive map-section" id="map-of" src="/static/img/mohp/whole_map_small_01_green.png"> -->
+                        <div class="img-responsive map-section" id="map-of">
+                            <img class="img-responsive hideme" src="/static/img/mohp/whole_map_small_01_green_shamegreen.png">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-2 map-container" id="transgression_container">
+                        <!-- <img class="img-responsive map-section" id="transgression" src="/static/img/mohp/whole_map_small_0201_green.png"> -->
+                        <div class="img-responsive map-section" id="transgression">
+                            <img class="img-responsive hideme" src="/static/img/mohp/whole_map_small_0201_green.png">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3 map-container" id="punishment_container">
+                        <!-- <img class="img-responsive map-section" id="punishment" src="/static/img/mohp/whole_map_small_0202_green.png"> -->
+                        <div class="img-responsive map-section" id="punishment">
+                            <img class="img-responsive hideme" src="/static/img/mohp/whole_map_small_0202_green.png">
+                        </div>
+                    </div>
+
+                    <!--  carried section starts here  -->
+                    <div class="col-xs-3 map-container" id="carried_container">
+                        <div class="row">
+                            <div class="col-xs-6 map-section" id="self">
+                                <img class="img-responsive hideme" src="/static/img/mohp/carriedoutby/self.png">
+                            </div>
+
+                            <div class="col-xs-6 map-section" id="secondParty">
+                                <img class="img-responsive hideme" src="/static/img/mohp/carriedoutby/2ndparty.png">
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-xs-7" id="carriedoutby">
+                                <img class="img-responsive title" src="/static/img/mohp/carriedoutby/carriedoutby_black.png">
+                            </div>
+                            <div class="col-xs-5 map-section" id="thirdParty">
+                                <img class="img-responsive hideme" src="/static/img/mohp/carriedoutby/3rdparty.png">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 col-xs-offset-9">
+                                <img class="img-responsive title" src="/static/img/mohp/carriedoutby/down_black.png">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  carried section ends here   -->
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3 map-container" id="cheap_container">
+                        <!-- <img class="img-responsive map-section" id="cheap" src="/static/img/mohp/whole_map_small_06_green.png"> -->
+                        <div class="img-responsive map-section" id="cheap">
+                            <img class="img-responsive hideme" src="/static/img/mohp/whole_map_small_06_green.png">
+                        </div>
+                    </div>
+                    <div class="col-xs-3 map-container" id="active_container">
+                        <!-- <img class="img-responsive map-section" id="active" src="/static/img/mohp/whole_map_small_05_green.png"> -->
+                        <div class="img-responsive map-section" id="active">
+                            <img class="img-responsive hideme" src="/static/img/mohp/whole_map_small_05_green.png">
+                        </div>
+                    </div>
+                    <div class="col-xs-2 map-container" id="proportional_container">
+                        <!-- <img class="img-responsive map-section" id="proportional" src="/static/img/mohp/whole_map_small_04_green.png"> -->
+                        <div class="img-responsive map-section" id="proportional">
+                            <img class="img-responsive hideme" src="/static/img/mohp/whole_map_small_04_green.png">
+                        </div>
+                    </div>
+                    <!-- punishments section starts here -->
+                    <div class="col-xs-4 map-container" id="punishments_container">
+                        <div class="row">
+                            <div id="title" class="col-xs-6 col-xs-offset-4 img-responsive title">
+                                <img class="img-responsive hideme" src="/static/img/mohp/deprivations/title_black.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-xs-4">
+                                <img class="img-responsive title" src="/static/img/mohp/deprivations/justarrow.png">
+                            </div>
+                            <div class="col-xs-3 map-section" id="life">
+                                <img class="img-responsive hideme" src="/static/img/mohp/deprivations/life.png">
+                            </div>
+                            <div class="col-xs-3 map-section" id="bodily-safety">
+                                <img class="img-responsive hideme" src="/static/img/mohp/deprivations/bodily_safety.png">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 map-section" id="resources">
+                                <img class="img-responsive hideme" src="/static/img/mohp/deprivations/resources.png">
+                            </div>
+                            <div class="col-xs-3 map-section" id="liberty">
+                                <img class="img-responsive hideme" src="/static/img/mohp/deprivations/liberty.png">
+                            </div>
+                            <div class="col-xs-6 map-section" id="reputation">
+                                <img class="img-responsive hideme" src="/static/img/mohp/deprivations/reputation.png">
+                            </div>
+                            <!-- <div class="col-xs-1"></div> -->
+                        </div>
+                    </div>
+                    <!--  punishments section ends here  -->
+                </div>
+            </div>
+
+            <!-- ||||||||||||||||||  PRE LOAD THE IMAGES ON HOVER TO BOOT PERFORMANCE ||||||||||||||||||  -->
+
+            <div style="display:none">
+                <img src="/static/img/mohp/whole_map_small_01_green_shamegreen.png">
+                <img src="/static/img/mohp/whole_map_small_0201_green_shamegreen.png">
+                <img src="/static/img/mohp/whole_map_small_0202_green_shamegreen.png">
+                <img src="/static/img/mohp/carriedoutby/self_black_shamegreen.png">
+                <img src="/static/img/mohp/carriedoutby/2ndparty_black_shamegreen.png">
+                <img src="/static/img/mohp/carriedoutby/3rdparty_black_shamegreen.png">
+                <img src="/static/img/mohp/whole_map_small_06_green_shamegreen.png">
+                <img src="/static/img/mohp/whole_map_small_05_green_shamegreen.png">
+                <img src="/static/img/mohp/whole_map_small_04_green_shamegreen.png">
+                <img src="/static/img/mohp/deprivations/bodily_safety_shamegreen.png">
+                <img src="/static/img/mohp/deprivations/life_shamegreen.png">
+                <img src="/static/img/mohp/deprivations/reputation_shamegreen.png">
+                <img src="/static/img/mohp/deprivations/resources_shamegreen.png">
+                <img src="/static/img/mohp/deprivations/liberty_shamegreen.png">
+                <img src="/static/img/mohp/deprivations/title_shamegreen.png">
+            </div>
+
+        </div>
+
+
+        <!-- ||||||||||||||||||  MOBILE & TABLET & SMALL DESKTOP LAYOUT ||||||||||||||||||  -->
+        <div id="mobile-experience" class="hidden-md hidden-lg">
+            <div id="background" class="hidden-xs">
+            </div>
+
+            <div class="row" id="title">
+                <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="/static/img/mohp/mobile-experience/whole_map_small_01_green_black.png">
+                </div>
+                <div class="col-sm-5 col-sm-offset-0 col-xs-12">
+                    <p id="mobile-map-title"></p>
+                </div>
+            </div>
+            <div id="bar">
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="/static/img/mohp/mobile-experience/whole_map_small_0201_green_black.png">
+                </div>
+                <div class="col-sm-5 col-xs-12 col-xs-offset-0">
+                    <p id="mobile-transgression"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="/static/img/mohp/mobile-experience/whole_map_small_0202_green_black.png">
+                </div>
+                <div class="col-sm-5 col-xs-12 col-xs-offset-0">
+                    <p id="mobile-punishments"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="/static/img/mohp/mobile-experience/carriedoutby_mobile.png">
+                </div>
+                <div class="col-sm-7 col-xs-12 col-xs-offset-0">
+                    <p id="mobile-carriedOutBy"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="/static/img/mohp/mobile-experience/deprivations_mobile.png">
+                </div>
+                <div class="col-sm-7 col-xs-12 col-xs-offset-0">
+                    <p id="mobile-deprivations"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="/static/img/mohp/mobile-experience/whole_map_small_04_green_black.png">
+                </div>
+                <div class="col-sm-5 col-xs-12 col-xs-offset-0">
+                    <p id="mobile-proportional"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="/static/img/mohp/mobile-experience/whole_map_small_05_green_black.png">
+                </div>
+                <div class="col-sm-5 col-xs-12 col-xs-offset-0">
+                    <p id="mobile-activePassive"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="/static/img/mohp/mobile-experience/whole_map_small_06_green_black.png">
+                </div>
+                <div class="col-sm-5 col-xs-12 col-xs-offset-0">
+                    <p id="mobile-price"></p>
+                </div>
+            </div>
+            <!--image row ends here-->
+        </div>
+        <!--mobile experience ends here-->
+    </div>
+    <!--container-fluid ends here-->
+    {% include footer.html %}
+</body>
+
+</html>
